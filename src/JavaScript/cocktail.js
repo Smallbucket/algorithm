@@ -17,7 +17,7 @@ function cocktailSort( arr ) {
 
 			right--
 			
-			for(j = right; j <= left; j--) {
+			for(j = right; j > left; j--) {
 				if(arr[j - 1] > arr[j])
 					swap(arr, j - 1, j)
 			}
